@@ -4,7 +4,7 @@ Heavy weight software due to UI
 https://www.jenkins.io/doc/book/installing/linux/#debianubuntu  - official page
 
 sudo apt update
-sudo apt install openjdk-17-jre
+sudo apt install openjdk-17-jre -y
 java -version
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
@@ -12,5 +12,6 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
+
 sudo apt-get update
-sudo apt-get install jenkins
+sudo apt-get install jenkins -y
