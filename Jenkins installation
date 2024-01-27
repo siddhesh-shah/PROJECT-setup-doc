@@ -4,7 +4,7 @@ Heavy weight software due to UI
 https://www.jenkins.io/doc/book/installing/linux/#debianubuntu  - official page
 
 sudo apt update
-sudo apt install fontconfig openjdk-17-jre
+sudo apt install openjdk-17-jre
 java -version
 
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
